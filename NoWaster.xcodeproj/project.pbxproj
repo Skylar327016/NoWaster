@@ -87,6 +87,13 @@
 		9477C5CB27045819001A0EB0 /* ShoppingListMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9477C5A727045819001A0EB0 /* ShoppingListMenuView.swift */; };
 		9477C5CC27045819001A0EB0 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9477C5A827045819001A0EB0 /* ShoppingListViewModel.swift */; };
 		9477C5D927045A2B001A0EB0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9477C5D827045A2B001A0EB0 /* GoogleService-Info.plist */; };
+		94E50D5227045E0A003FBCC1 /* profile.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D4B27045E0A003FBCC1 /* profile.gif */; };
+		94E50D5327045E0A003FBCC1 /* chat.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D4C27045E0A003FBCC1 /* chat.gif */; };
+		94E50D5427045E0A003FBCC1 /* sign_in.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D4D27045E0A003FBCC1 /* sign_in.gif */; };
+		94E50D5527045E0A003FBCC1 /* inventory.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D4E27045E0A003FBCC1 /* inventory.gif */; };
+		94E50D5627045E0A003FBCC1 /* map.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D4F27045E0A003FBCC1 /* map.gif */; };
+		94E50D5727045E0A003FBCC1 /* shopping_list.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D5027045E0A003FBCC1 /* shopping_list.gif */; };
+		94E50D5827045E0A003FBCC1 /* profile_setup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D5127045E0A003FBCC1 /* profile_setup.gif */; };
 		9628CF58D3F002EE71D90B17 /* libPods-NoWasterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF190951A2D017762122CF /* libPods-NoWasterTests.a */; };
 		E055A135639F5703DE3CB308 /* libPods-NoWaster-NoWasterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */; };
 		E9C2DE77A8807CA251A1DC70 /* libPods-NoWaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AA588076AADAD316C5E412 /* libPods-NoWaster.a */; };
@@ -204,6 +211,13 @@
 		9477C5A727045819001A0EB0 /* ShoppingListMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListMenuView.swift; sourceTree = "<group>"; };
 		9477C5A827045819001A0EB0 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
 		9477C5D827045A2B001A0EB0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		94E50D4B27045E0A003FBCC1 /* profile.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = profile.gif; sourceTree = "<group>"; };
+		94E50D4C27045E0A003FBCC1 /* chat.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = chat.gif; sourceTree = "<group>"; };
+		94E50D4D27045E0A003FBCC1 /* sign_in.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sign_in.gif; sourceTree = "<group>"; };
+		94E50D4E27045E0A003FBCC1 /* inventory.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inventory.gif; sourceTree = "<group>"; };
+		94E50D4F27045E0A003FBCC1 /* map.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map.gif; sourceTree = "<group>"; };
+		94E50D5027045E0A003FBCC1 /* shopping_list.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shopping_list.gif; sourceTree = "<group>"; };
+		94E50D5127045E0A003FBCC1 /* profile_setup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = profile_setup.gif; sourceTree = "<group>"; };
 		990CD797B65C9BE6F67738A4 /* Pods-NoWasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoWasterTests.release.xcconfig"; path = "Target Support Files/Pods-NoWasterTests/Pods-NoWasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoWaster-NoWasterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -262,6 +276,7 @@
 		944A76E82704508800342612 /* NoWaster */ = {
 			isa = PBXGroup;
 			children = (
+				94E50D4A27045E0A003FBCC1 /* Demo */,
 				9477C556270457AB001A0EB0 /* Utilities */,
 				9477C52E2704578B001A0EB0 /* View */,
 				9477C51A2704576D001A0EB0 /* Model */,
@@ -574,6 +589,20 @@
 			path = ShoppingListView;
 			sourceTree = "<group>";
 		};
+		94E50D4A27045E0A003FBCC1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				94E50D4B27045E0A003FBCC1 /* profile.gif */,
+				94E50D4C27045E0A003FBCC1 /* chat.gif */,
+				94E50D4D27045E0A003FBCC1 /* sign_in.gif */,
+				94E50D4E27045E0A003FBCC1 /* inventory.gif */,
+				94E50D4F27045E0A003FBCC1 /* map.gif */,
+				94E50D5027045E0A003FBCC1 /* shopping_list.gif */,
+				94E50D5127045E0A003FBCC1 /* profile_setup.gif */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		D66A6EBC42F149ADAB50812D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -695,7 +724,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94E50D5827045E0A003FBCC1 /* profile_setup.gif in Resources */,
+				94E50D5427045E0A003FBCC1 /* sign_in.gif in Resources */,
+				94E50D5627045E0A003FBCC1 /* map.gif in Resources */,
+				94E50D5727045E0A003FBCC1 /* shopping_list.gif in Resources */,
+				94E50D5527045E0A003FBCC1 /* inventory.gif in Resources */,
+				94E50D5227045E0A003FBCC1 /* profile.gif in Resources */,
 				944A76F12704508A00342612 /* Preview Assets.xcassets in Resources */,
+				94E50D5327045E0A003FBCC1 /* chat.gif in Resources */,
 				944A76EE2704508A00342612 /* Assets.xcassets in Resources */,
 				9477C5D927045A2B001A0EB0 /* GoogleService-Info.plist in Resources */,
 			);
