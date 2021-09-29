@@ -9,14 +9,14 @@ This screen allows users to **sign in with Apple or Google**.
 
 ### Profile set-up screen
 This screen requires a user to set up profile before using the app.   
-![sign in demo](NoWaster/Demo/profile_setup.gif)
+![profile setup demo](NoWaster/Demo/profile_setup.gif)
 
 ### Shopping list screen
 1. Add item
 2. Delete item
 3. Add item from history
 4. Import to Inventory  
-![sign in demo](NoWaster/Demo/shopping_list.gif)
+![shopping list demo](NoWaster/Demo/shopping_list.gif)
 
 ### Inventory screen
 1. Add item 
@@ -25,20 +25,20 @@ This screen requires a user to set up profile before using the app.
 4. Batch edition
 5. Batch deletion
 6. Gift items  
-![sign in demo](NoWaster/Demo/inventory.gif)
+![inventory demo](NoWaster/Demo/inventory.gif)
 
 ### Map screen
 1. Check givers and available items
 2. Retrieve items
 3. Message a giver  
-![sign in demo](NoWaster/Demo/map.gif)
+![map demo](NoWaster/Demo/map.gif)
 
 ### Chat screen
 1. View chats
 2. Send text message  
-![sign in demo](NoWaster/Demo/chat.gif)
+![chat demo](NoWaster/Demo/chat.gif)
 
 ### Profile screen
 1. Update profile
 2. Sign out  
-![sign in demo](NoWaster/Demo/profile.gif)
+![profile demo](NoWaster/Demo/profile.gif)
