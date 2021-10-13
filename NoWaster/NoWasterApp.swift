@@ -14,7 +14,7 @@ struct NoWasterApp: App {
     
     var body: some Scene {
         WindowGroup {
-            AppTabView()
+            AppWelcomeView()
         }
     }
 }

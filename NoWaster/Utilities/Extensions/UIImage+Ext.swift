@@ -8,6 +8,7 @@ extension UIImage {
     static let foodPlaceholder = UIImage(named: "food-placeholder")!
     static let icon = UIImage(named: "app_icon")!
     static let theme = UIImage(named: "app_theme")!
+    static let clock = UIImage(systemName: "deskclock.fill")!
     
     func convertToCKAsset(with recordName: String) -> CKAsset?{
         //Get our apps base document directory url
