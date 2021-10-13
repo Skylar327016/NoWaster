@@ -6,6 +6,8 @@ import CloudKit
 extension UIImage {
     static let man = UIImage(named: "man")!.withTintColor(.gray)
     static let foodPlaceholder = UIImage(named: "food-placeholder")!
+    static let icon = UIImage(named: "app_icon")!
+    static let theme = UIImage(named: "app_theme")!
     
     func convertToCKAsset(with recordName: String) -> CKAsset?{
         //Get our apps base document directory url

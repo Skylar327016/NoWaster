@@ -94,6 +94,8 @@
 		94E50D5627045E0A003FBCC1 /* map.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D4F27045E0A003FBCC1 /* map.gif */; };
 		94E50D5727045E0A003FBCC1 /* shopping_list.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D5027045E0A003FBCC1 /* shopping_list.gif */; };
 		94E50D5827045E0A003FBCC1 /* profile_setup.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94E50D5127045E0A003FBCC1 /* profile_setup.gif */; };
+		94EF4A9D271769EA00EF6941 /* AppWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF4A9C271769EA00EF6941 /* AppWelcomeView.swift */; };
+		94EF4AA227176A0F00EF6941 /* odin_rounded_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */; };
 		9628CF58D3F002EE71D90B17 /* libPods-NoWasterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF190951A2D017762122CF /* libPods-NoWasterTests.a */; };
 		E055A135639F5703DE3CB308 /* libPods-NoWaster-NoWasterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */; };
 		E9C2DE77A8807CA251A1DC70 /* libPods-NoWaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AA588076AADAD316C5E412 /* libPods-NoWaster.a */; };
@@ -218,6 +220,8 @@
 		94E50D4F27045E0A003FBCC1 /* map.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map.gif; sourceTree = "<group>"; };
 		94E50D5027045E0A003FBCC1 /* shopping_list.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = shopping_list.gif; sourceTree = "<group>"; };
 		94E50D5127045E0A003FBCC1 /* profile_setup.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = profile_setup.gif; sourceTree = "<group>"; };
+		94EF4A9C271769EA00EF6941 /* AppWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWelcomeView.swift; sourceTree = "<group>"; };
+		94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = odin_rounded_bold.otf; sourceTree = "<group>"; };
 		990CD797B65C9BE6F67738A4 /* Pods-NoWasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoWasterTests.release.xcconfig"; path = "Target Support Files/Pods-NoWasterTests/Pods-NoWasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoWaster-NoWasterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -284,6 +288,7 @@
 				944A76E92704508800342612 /* NoWasterApp.swift */,
 				944A76ED2704508A00342612 /* Assets.xcassets */,
 				944A76F22704508A00342612 /* Info.plist */,
+				94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */,
 				9477C5D827045A2B001A0EB0 /* GoogleService-Info.plist */,
 				944A76EF2704508A00342612 /* Preview Content */,
 			);
@@ -437,6 +442,7 @@
 		9477C57627045819001A0EB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				94EF4A9B271769CE00EF6941 /* AppWelcomVIew */,
 				9477C57727045819001A0EB0 /* MessageView */,
 				9477C57C27045819001A0EB0 /* InventoryAdditionView */,
 				9477C57F27045819001A0EB0 /* ChatView */,
@@ -603,6 +609,14 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		94EF4A9B271769CE00EF6941 /* AppWelcomVIew */ = {
+			isa = PBXGroup;
+			children = (
+				94EF4A9C271769EA00EF6941 /* AppWelcomeView.swift */,
+			);
+			path = AppWelcomVIew;
+			sourceTree = "<group>";
+		};
 		D66A6EBC42F149ADAB50812D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -725,6 +739,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E50D5827045E0A003FBCC1 /* profile_setup.gif in Resources */,
+				94EF4AA227176A0F00EF6941 /* odin_rounded_bold.otf in Resources */,
 				94E50D5427045E0A003FBCC1 /* sign_in.gif in Resources */,
 				94E50D5627045E0A003FBCC1 /* map.gif in Resources */,
 				94E50D5727045E0A003FBCC1 /* shopping_list.gif in Resources */,
@@ -880,6 +895,7 @@
 				9477C5C227045819001A0EB0 /* ProfileViewModel.swift in Sources */,
 				9477C569270457AB001A0EB0 /* LocationManager.swift in Sources */,
 				9477C5C427045819001A0EB0 /* LocationSetUpViewModel.swift in Sources */,
+				94EF4A9D271769EA00EF6941 /* AppWelcomeView.swift in Sources */,
 				9477C5B027045819001A0EB0 /* ChatCell.swift in Sources */,
 				9477C5AA27045819001A0EB0 /* NewMessageView.swift in Sources */,
 				9477C5C627045819001A0EB0 /* GiverInfoViewModel.swift in Sources */,
