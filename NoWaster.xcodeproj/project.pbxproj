@@ -97,6 +97,7 @@
 		94EF4A9D271769EA00EF6941 /* AppWelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF4A9C271769EA00EF6941 /* AppWelcomeView.swift */; };
 		94EF4AA227176A0F00EF6941 /* odin_rounded_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */; };
 		94EF4AA8271772B500EF6941 /* EnableNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF4AA7271772B500EF6941 /* EnableNotificationView.swift */; };
+		94EF4AB82718C55400EF6941 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EF4AB72718C55400EF6941 /* Launch Screen.storyboard */; };
 		9628CF58D3F002EE71D90B17 /* libPods-NoWasterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF190951A2D017762122CF /* libPods-NoWasterTests.a */; };
 		E055A135639F5703DE3CB308 /* libPods-NoWaster-NoWasterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */; };
 		E9C2DE77A8807CA251A1DC70 /* libPods-NoWaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AA588076AADAD316C5E412 /* libPods-NoWaster.a */; };
@@ -224,6 +225,7 @@
 		94EF4A9C271769EA00EF6941 /* AppWelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWelcomeView.swift; sourceTree = "<group>"; };
 		94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = odin_rounded_bold.otf; sourceTree = "<group>"; };
 		94EF4AA7271772B500EF6941 /* EnableNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotificationView.swift; sourceTree = "<group>"; };
+		94EF4AB72718C55400EF6941 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		990CD797B65C9BE6F67738A4 /* Pods-NoWasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoWasterTests.release.xcconfig"; path = "Target Support Files/Pods-NoWasterTests/Pods-NoWasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoWaster-NoWasterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -401,6 +403,7 @@
 				9477C5402704578B001A0EB0 /* ImagePicker.swift */,
 				9477C5412704578B001A0EB0 /* ScanDocumentView.swift */,
 				9477C5422704578B001A0EB0 /* AppleSignInButton.swift */,
+				94EF4AB72718C55400EF6941 /* Launch Screen.storyboard */,
 			);
 			path = UIKitComponents;
 			sourceTree = "<group>";
@@ -755,6 +758,7 @@
 				94E50D5627045E0A003FBCC1 /* map.gif in Resources */,
 				94E50D5727045E0A003FBCC1 /* shopping_list.gif in Resources */,
 				94E50D5527045E0A003FBCC1 /* inventory.gif in Resources */,
+				94EF4AB82718C55400EF6941 /* Launch Screen.storyboard in Resources */,
 				94E50D5227045E0A003FBCC1 /* profile.gif in Resources */,
 				944A76F12704508A00342612 /* Preview Assets.xcassets in Resources */,
 				94E50D5327045E0A003FBCC1 /* chat.gif in Resources */,

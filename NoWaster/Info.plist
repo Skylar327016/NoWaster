@@ -35,6 +35,10 @@
 	<string>We need to access the camera for taking photos</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need to use your location to show the gifted food around you</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>odin_rounded_bold.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -44,6 +48,8 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict/>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -58,10 +64,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>odin_rounded_bold.otf</string>
 	</array>
 </dict>
 </plist>

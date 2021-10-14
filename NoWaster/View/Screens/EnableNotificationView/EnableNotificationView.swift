@@ -1,8 +1,12 @@
 
 
 import SwiftUI
+import Firebase
 
 struct EnableNotificationView: View {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some View {
         VStack {
             HStack {
@@ -40,8 +44,50 @@ struct EnableNotificationView: View {
             
             Spacer()
             
+            Button {
+                requestNotificationAuthorization()
+            } label: {
+                Text("Ok")
+                    .font(.custom("Odin-Bold", size: 20))
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 200, height: 40)
+                    .background(Color.brandPrimary)
+                    .cornerRadius(18)
+                    .padding(5)
+            }
+            
+            Button {
+                
+            } label: {
+                Text("Maybe Later")
+                    .font(.custom("Odin-Bold", size: 20))
+                    .fontWeight(.semibold)
+                    .foregroundColor(.white)
+                    .frame(width: 200, height: 40)
+                    .background(Color.brandSecondary)
+                    .cornerRadius(18)
+                    .padding(5)
+            }
         }
         .navigationBarHidden(true)
+    }
+    private func requestNotificationAuthorization() {
+        let application = UIApplication.shared
+        
+        if #available(iOS 10.0, *) {
+            let authOptions : UNAuthorizationOptions = [.alert, .badge, .sound]
+            UNUserNotificationCenter.current().requestAuthorization(
+                options: authOptions,
+                completionHandler: {_,_ in })
+            
+            // For iOS 10 display notification (sent via APNS)
+            UNUserNotificationCenter.current().delegate = appDelegate
+            // For iOS 10 data message (sent via FCM)
+            Messaging.messaging().delegate = appDelegate
+        }
+        
+        application.registerForRemoteNotifications()
     }
 }
 
