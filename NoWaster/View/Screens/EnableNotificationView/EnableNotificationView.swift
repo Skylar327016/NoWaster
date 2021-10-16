@@ -6,6 +6,7 @@ import Firebase
 struct EnableNotificationView: View {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @State var enableNotification = false
     
     var body: some View {
         VStack {
@@ -44,22 +45,24 @@ struct EnableNotificationView: View {
             
             Spacer()
             
-            Button {
-                requestNotificationAuthorization()
-            } label: {
-                Text("Ok")
-                    .font(.custom("Odin-Bold", size: 20))
-                    .fontWeight(.semibold)
-                    .foregroundColor(.white)
-                    .frame(width: 200, height: 40)
-                    .background(Color.brandPrimary)
-                    .cornerRadius(18)
-                    .padding(5)
-            }
             
-            Button {
-                
-            } label: {
+            NavigationLink(
+                destination: TestSignInView(),
+                isActive: $enableNotification,
+                label: {
+                    Text("OK")
+                        .font(.custom("Odin-Bold", size: 20))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 200, height: 40)
+                        .background(Color.brandPrimary)
+                        .cornerRadius(18)
+                        .padding(5)
+                        .onTapGesture(perform: requestNotificationAuthorization)
+                })
+            
+            
+            NavigationLink(destination: TestSignInView()) {
                 Text("Maybe Later")
                     .font(.custom("Odin-Bold", size: 20))
                     .fontWeight(.semibold)
@@ -69,9 +72,13 @@ struct EnableNotificationView: View {
                     .cornerRadius(18)
                     .padding(5)
             }
+            
         }
         .navigationBarHidden(true)
+
     }
+    
+    
     private func requestNotificationAuthorization() {
         let application = UIApplication.shared
         
@@ -88,6 +95,7 @@ struct EnableNotificationView: View {
         }
         
         application.registerForRemoteNotifications()
+        enableNotification = true
     }
 }
 

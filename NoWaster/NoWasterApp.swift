@@ -15,6 +15,12 @@ struct NoWasterApp: App {
     var body: some Scene {
         WindowGroup {
             AppWelcomeView()
+//
+//            if setup {
+//                MainView()
+//            } else {
+//                SetupScreens()
+//            }
         }
     }
 }
@@ -43,9 +49,9 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-           print("Unable to register for remote notifications: \(error.localizedDescription)")
-       }
-       
+        print("Unable to register for remote notifications: \(error.localizedDescription)")
+    }
+    
     
     
     func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],

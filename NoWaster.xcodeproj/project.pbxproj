@@ -98,6 +98,8 @@
 		94EF4AA227176A0F00EF6941 /* odin_rounded_bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */; };
 		94EF4AA8271772B500EF6941 /* EnableNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF4AA7271772B500EF6941 /* EnableNotificationView.swift */; };
 		94EF4AB82718C55400EF6941 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94EF4AB72718C55400EF6941 /* Launch Screen.storyboard */; };
+		94EF4AC12718C7C600EF6941 /* AllowLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF4AC02718C7C600EF6941 /* AllowLocationView.swift */; };
+		94EF4ACD2718D06000EF6941 /* TestSignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94EF4ACC2718D06000EF6941 /* TestSignInView.swift */; };
 		9628CF58D3F002EE71D90B17 /* libPods-NoWasterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BFF190951A2D017762122CF /* libPods-NoWasterTests.a */; };
 		E055A135639F5703DE3CB308 /* libPods-NoWaster-NoWasterUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */; };
 		E9C2DE77A8807CA251A1DC70 /* libPods-NoWaster.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43AA588076AADAD316C5E412 /* libPods-NoWaster.a */; };
@@ -226,6 +228,8 @@
 		94EF4AA127176A0F00EF6941 /* odin_rounded_bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = odin_rounded_bold.otf; sourceTree = "<group>"; };
 		94EF4AA7271772B500EF6941 /* EnableNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableNotificationView.swift; sourceTree = "<group>"; };
 		94EF4AB72718C55400EF6941 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		94EF4AC02718C7C600EF6941 /* AllowLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllowLocationView.swift; sourceTree = "<group>"; };
+		94EF4ACC2718D06000EF6941 /* TestSignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSignInView.swift; sourceTree = "<group>"; };
 		990CD797B65C9BE6F67738A4 /* Pods-NoWasterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoWasterTests.release.xcconfig"; path = "Target Support Files/Pods-NoWasterTests/Pods-NoWasterTests.release.xcconfig"; sourceTree = "<group>"; };
 		EC1FC71CFA0BE02930E8C805 /* libPods-NoWaster-NoWasterUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NoWaster-NoWasterUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -447,6 +451,9 @@
 		9477C57627045819001A0EB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				94EF4ACC2718D06000EF6941 /* TestSignInView.swift */,
+				9477C59627045819001A0EB0 /* SignInView */,
+				94EF4ABF2718C7A900EF6941 /* AllowLocationView */,
 				94EF4AA62717729500EF6941 /* EnableNotificationView */,
 				94EF4A9B271769CE00EF6941 /* AppWelcomVIew */,
 				9477C57727045819001A0EB0 /* MessageView */,
@@ -457,7 +464,6 @@
 				9477C58B27045819001A0EB0 /* FirstStartUpView */,
 				9477C58E27045819001A0EB0 /* InventoryEditionView */,
 				9477C59127045819001A0EB0 /* InventoryListView */,
-				9477C59627045819001A0EB0 /* SignInView */,
 				9477C59927045819001A0EB0 /* ProfileView */,
 				9477C59C27045819001A0EB0 /* LocationSetUpView */,
 				9477C5A027045819001A0EB0 /* GiverInfoView */,
@@ -629,6 +635,14 @@
 				94EF4AA7271772B500EF6941 /* EnableNotificationView.swift */,
 			);
 			path = EnableNotificationView;
+			sourceTree = "<group>";
+		};
+		94EF4ABF2718C7A900EF6941 /* AllowLocationView */ = {
+			isa = PBXGroup;
+			children = (
+				94EF4AC02718C7C600EF6941 /* AllowLocationView.swift */,
+			);
+			path = AllowLocationView;
 			sourceTree = "<group>";
 		};
 		D66A6EBC42F149ADAB50812D /* Pods */ = {
@@ -931,7 +945,9 @@
 				9477C5272704576D001A0EB0 /* Message.swift in Sources */,
 				9477C5242704576D001A0EB0 /* Chat.swift in Sources */,
 				9477C5C527045819001A0EB0 /* LocationSetUpView.swift in Sources */,
+				94EF4ACD2718D06000EF6941 /* TestSignInView.swift in Sources */,
 				9477C5AD27045819001A0EB0 /* InventoryAdditionViewModel.swift in Sources */,
+				94EF4AC12718C7C600EF6941 /* AllowLocationView.swift in Sources */,
 				9477C5B527045819001A0EB0 /* GiverMapView.swift in Sources */,
 				9477C5B827045819001A0EB0 /* FirstStartUpViewModel.swift in Sources */,
 				9477C5BE27045819001A0EB0 /* InventoryListView.swift in Sources */,

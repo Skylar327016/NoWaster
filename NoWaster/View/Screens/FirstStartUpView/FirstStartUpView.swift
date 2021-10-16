@@ -43,7 +43,6 @@ struct FirstStartUpView: View {
                 Alert(title: item.title, message: item.message, dismissButton: item.dismissButton)
             }
             .onAppear(perform: UIApplication.shared.addTapGestureRecognizer)
-            .onAppear(perform: LocationManager.shared.requestUserLocation)
         }
     }
     

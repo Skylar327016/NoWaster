@@ -24,7 +24,7 @@ struct AppWelcomeView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: EnableNotificationView()) {
+                NavigationLink(destination: AllowLocationView()) {
                     Text("Start")
                         .font(.custom("Odin-Bold", size: 20))
                         .fontWeight(.semibold)
