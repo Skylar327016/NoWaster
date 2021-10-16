@@ -3,6 +3,9 @@
 import SwiftUI
 
 struct AppWelcomeView: View {
+    
+    @StateObject var viewModel = AppWelcomeViewModel()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -26,11 +29,23 @@ struct AppWelcomeView: View {
                 
                 
                 VStack {
-                    AppleSignInButton()
-                        .frame(width: 250, height: 50)
+                    NavigationLink(
+                        destination: AllowLocationView(),
+                        isActive: $viewModel.signedIn,
+                        label: {
+                            AppleSignInButton()
+                                .frame(width: 250, height: 50)
+                                .onTapGesture(perform: viewModel.signInwithApple)
+                        })
                     
-                    GoogleSignInButton()
                     
+                    NavigationLink(
+                        destination: AllowLocationView(),
+                        isActive: $viewModel.signedIn,
+                        label: {
+                            GoogleSignInButton()
+                                .onTapGesture(perform: viewModel.signInWithGoogle)
+                        })
                 }
                 
                 Text("- or -")
