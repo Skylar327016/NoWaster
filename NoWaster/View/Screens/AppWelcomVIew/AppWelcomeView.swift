@@ -24,17 +24,40 @@ struct AppWelcomeView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: AllowLocationView()) {
-                    Text("Start")
+                
+                VStack {
+                    AppleSignInButton()
+                        .frame(width: 250, height: 50)
+                    
+                    GoogleSignInButton()
+                    
+                }
+                
+                Text("- or -")
+                    .font(.system(size: 20))
+                
+                HStack {
+                    Text("Sign up")
                         .font(.custom("Odin-Bold", size: 20))
                         .fontWeight(.semibold)
                         .foregroundColor(.white)
-                        .frame(width: 200, height: 40)
+                        .frame(width: 125, height: 50)
                         .background(Color.brandPrimary)
-                        .cornerRadius(18)
-                        .padding()
+                        .cornerRadius(5)
+                    
+                    
+                    Text("Email sign in")
+                        .font(.custom("Odin-Bold", size: 20))
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 125, height: 50)
+                        .background(Color.brandPrimary)
+                        .cornerRadius(5)
                 }
+                .padding(10)
+                
             }
+            .navigationBarHidden(true)
         }
         
     }
@@ -48,3 +71,22 @@ struct AppWelcomeView_Previews: PreviewProvider {
         }
     }
 }
+
+struct GoogleSignInButton: View {
+    var body: some View {
+        HStack {
+            Image("google")
+                .resizable()
+                .frame(width: 20, height: 20)
+            
+            Text("Sign in with Google")
+                .fontWeight(.semibold)
+        }
+        .frame(width: 250, height: 50)
+        .foregroundColor(Color.gray)
+        .background(Color.white)
+        .cornerRadius(5)
+        .shadow(radius: 3)
+    }
+}
+

@@ -64,20 +64,3 @@ struct LoginView_Previews: PreviewProvider {
     }
 }
 
-struct GoogleSignInButton: View {
-    var body: some View {
-        HStack {
-            Image("google")
-                .resizable()
-                .frame(width: 20, height: 20)
-            
-            Text("Sign in with Google")
-                .fontWeight(.semibold)
-        }
-        .frame(width: 300, height: 50)
-        .foregroundColor(Color.gray)
-        .background(Color.white)
-        .cornerRadius(5)
-        .shadow(radius: 3)
-    }
-}
