@@ -102,7 +102,7 @@ final class AppWelcomeViewModel: NSObject, ObservableObject {
             // Sign in with Firebase.
             Auth.auth().signIn(with: credential) { [weak self] (authResult, error) in
                 if let user = authResult?.user, let self = self {
-                    print("Nice! You are now signed in")
+                    
                     self.signedIn = true
                     DatabaseManager.shared.database.child(user.uid).setValue(["uid": user.uid])
                 } else {

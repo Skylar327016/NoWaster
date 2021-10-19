@@ -47,7 +47,7 @@ struct EnableNotificationView: View {
             
             
             NavigationLink(
-                destination: TestSignInView(),
+                destination: TestView(showAgreementAndPrivacyPolicy: .constant(false)),
                 isActive: $enableNotification,
                 label: {
                     Text("OK")
@@ -62,7 +62,7 @@ struct EnableNotificationView: View {
                 })
             
             
-            NavigationLink(destination: TestSignInView()) {
+            NavigationLink(destination: TestView(showAgreementAndPrivacyPolicy: .constant(false))) {
                 Text("Maybe Later")
                     .font(.custom("Odin-Bold", size: 20))
                     .fontWeight(.semibold)
